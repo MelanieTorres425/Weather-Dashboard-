@@ -120,10 +120,10 @@ $(document).ready(function () {
       );
       // temp
       let temp5D = $("#5d-temperature-" + i);
-      temp5D.text(dailyTempArr[i]);
+      temp5D.text(dailyTempArr[i] + "\u00B0F");
       // Humidity
       let humid5D = $("#5d-humidity-" + i);
-      humid5D.text(dailyHumidArr[i]);
+      humid5D.text(dailyHumidArr[i] + "%");
     }
   }
 
