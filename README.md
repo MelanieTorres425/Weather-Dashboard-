@@ -23,4 +23,4 @@ When you click a city in the seatch history, you are once again presented with t
 
 ## Screenshot
 
-![Weather Dashboard](Weather-Dashboard.png)
+![Weather-Dashboard](./Assets/Weather-Dashboard.png)
