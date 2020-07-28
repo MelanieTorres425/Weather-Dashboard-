@@ -48,7 +48,7 @@ $(document).ready(function () {
 
   function displayCurrent(cityName, icon, tempf, hum, windSpeed) {
     $("#cityCurrent").text(cityName);
-    $("#date").text(moment().format("LL"));
+    $("#date").text(moment().format("l"));
 
     $("#weather-icon").empty();
     let createIcon = $("<img>");
@@ -78,6 +78,17 @@ $(document).ready(function () {
       console.log(response);
       let uvIndex = response.daily[0].uvi;
       $("#uv").text(uvIndex);
+      if (uvIndex >= 11) {
+        $("#uv").attr("style", "background-color: mediumpurple");
+      } else if (uvIndex >= 8) {
+        $("#uv").attr("style", "background-color: red");
+      } else if (uvIndex >= 6) {
+        $("#uv").attr("style", "background-color: orange");
+      } else if (uvIndex >= 3) {
+        $("#uv").attr("style", "background-color: yellow");
+      } else {
+        $("#uv").attr("style", "background-color: green");
+      }
 
       let dailyDateArr = [];
       let dailyIconArr = [];

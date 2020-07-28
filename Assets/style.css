@@ -4,6 +4,15 @@ body {
   background-color: #ffffff;
 }
 
+h1 {
+  color: #ffffff;
+  font-family: "Anton", sans-serif;
+}
+
+h2 {
+  font-family: "Anton", sans-serif;
+}
+
 header {
   width: 100%;
   background-color: #4f5d75;
@@ -12,29 +21,44 @@ header {
   padding: 1em 0;
 }
 
-#history {
-  list-style-type: none;
-  margin-bottom: 10px;
-  width: 17rem;
-  text-align: center;
-  cursor: pointer;
-}
-
 .jumbotron {
   background-color: #a0c4e2;
-  color: #ffffff;
+  font-weight: bold;
+}
+
+.details {
+  font-family: "Montserrat", sans-serif;
 }
 
 .card {
   background-color: #a0c4e2;
+  font-weight: bold;
+  font-size: 11px;
 }
 
+.card-title {
+  font-family: "Anton", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card-text {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
 .nav {
   background-color: #aed1e6;
 }
 
-.weather-form {
-  background-color: ;
+#history {
+  list-style-type: none;
+  margin-bottom: 10px;
+  width: 17rem;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  cursor: pointer;
 }
 
 .footer {
